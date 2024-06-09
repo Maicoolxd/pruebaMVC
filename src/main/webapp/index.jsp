@@ -3,11 +3,15 @@
 <html>
 <head>
     <title>Prueba MVC</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles.css">
 </head>
 <body>
-<h1><%= "Prueba con MVC" %>
-</h1>
-<br/>
-<a href="${pageContext.request.contextPath}/ServletControlador">Hello Servlet</a>
+<div class ="container">
+<h1><%= "Prueba con MVC" %></h1>
+    <ul>
+    <li><a href="${pageContext.request.contextPath}/ServletCliente">Solicitud</a></li>
+    <li><a href="${pageContext.request.contextPath}/ServletCredito">Credito</a></li>
+    </ul>
+</div>
 </body>
 </html>
